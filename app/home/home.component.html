@@ -1,0 +1,17 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" [text]="titre"></Label>
+</ActionBar>
+
+<GridLayout class="page">
+    <!-- Add your page content here -->
+    <StackLayout>
+        <Image [src]="imageEnteteDPI"></Image>
+        <Label [text]="sousTitre"></Label>
+    </StackLayout>
+    <StackLayout>
+        <Label [text]="informations"></Label>
+    </StackLayout>
+    <StackLayout>
+        <Button (tap)="coincoin()"></Button>
+    </StackLayout>
+</GridLayout>
