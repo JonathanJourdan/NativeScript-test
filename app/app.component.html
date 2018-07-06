@@ -1,1 +1,9 @@
-<page-router-outlet></page-router-outlet>
+<StackLayout class="page">
+    <StackLayout orientation="horizontal">
+        <Button text="Accueil" [nsRouterLink]="['/home']" pageTransition ="slideRight"></Button>
+        <Button text="FakeListe" [nsRouterLink]="['/fakeliste']" pageTransition ="explode"></Button>
+    </StackLayout>
+
+    <page-router-outlet></page-router-outlet>
+
+</StackLayout>

@@ -3,17 +3,11 @@ import { Component, OnInit } from "@angular/core";
 @Component({
     selector: "Home",
     moduleId: module.id,
-    templateUrl: "./home.component.html",
-    styleUrls:["./home.component.css"]
+    templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
-    titre:string = "Donald Trump";
-    imageEntete:string = "";
-    imageEnteteDPI = "res://logo";
-    imageEnteteLocale="~/adresseduneimage.png";
 
-    sousTitre:string = "Coin Coin";
-    informations:string = "viens decouvrir mon monde";
+    description:string = "Ma description qui roule tourne terrible uf ufhuv hv vh befe f ssdjv dshvbd vfn f nfifnvnnf ivn ivn nfvfnvfd fdu bu fvyz fyv uzvy v ssvfsf";
 
     constructor() {
         // Use the component constructor to inject providers.
@@ -21,9 +15,5 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
         // Init your component properties here.
-    }
-    //Méthode coincoin
-    coincoin() {
-        console.log("coin coin");
     }
 }

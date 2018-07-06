@@ -1,0 +1,12 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Fake list"></Label>
+</ActionBar>
+<ScrollView orientation="vertical" class="page">
+<StackLayout>
+        <GridLayout colums="70,*" rows="50,*" *ngFor="let item of listeNews" class="animationSlide">
+            <Image [src]="item.img"></Image>
+            <Label [text]="item.text" class="h2" col="1"></Label>
+            <Label [text]="item.descr" class="text" row="1" colSpan="2" textWrap="true"></Label>
+        </GridLayout>
+</StackLayout>
+</ScrollView>

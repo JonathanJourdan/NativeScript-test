@@ -1,17 +1,20 @@
 <ActionBar class="action-bar">
-    <Label class="action-bar-title" [text]="titre"></Label>
+    <Label class="action-bar-title" text="Home"></Label>
 </ActionBar>
-
-<GridLayout class="page">
-    <!-- Add your page content here -->
-    <StackLayout>
-        <Image [src]="imageEnteteDPI"></Image>
-        <Label [text]="sousTitre"></Label>
+<ScrollView>
+    <StackLayout class="page animationSlide">
+        <!-- Add your page content here -->
+        <StackLayout>
+            <Label class="h1" text="Coin Coin"></Label>
+        </StackLayout>
+        <StackLayout class="animationSlide">
+            <Image class="logoamoi" src="res://donald"></Image>
+        </StackLayout>
+        <StackLayout>
+            <Label [text]="description" textWrap="true"></Label>
+        </StackLayout>
+        <StackLayout>
+            <Label class="h2" [text]="description" textWrap="true"></Label>
+        </StackLayout>
     </StackLayout>
-    <StackLayout>
-        <Label [text]="informations"></Label>
-    </StackLayout>
-    <StackLayout>
-        <Button (tap)="coincoin()"></Button>
-    </StackLayout>
-</GridLayout>
+</ScrollView>
